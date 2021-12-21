@@ -2,6 +2,7 @@
 
 export EDITOR='nvim'
 export MANPAGER='nvim +Man!'
+export TERMINAL='kitty'
 alias less=$PAGER
 alias zless=$PAGER
 

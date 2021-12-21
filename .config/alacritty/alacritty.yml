@@ -1,57 +1,39 @@
 # Colors (One Darker)
 # Note I am using alacritty-ligatures until ligatures make it upstream
-colors:
-  # Default colors
-  primary:
-    # background: "#232731"
-    background: "#1f2227"
-    foreground: "#abb2bf"
+schemes:
+  # Tokyo Night theme, based on both:
+  #   https://github.com/ghifarit53/tokyonight-vim
+  #   https://github.com/enkia/tokyo-night-vscode-theme
+  tokyo-night: &tokyo-night
+    # Default colors
+    primary:
+      background: '0x1a1b26'
+      foreground: '0xa9b1d6'
 
-#   # Normal colors
-#   # Nord
-#   normal:
-#     black: "#4C566A"
-#     red: "#bf616a"
-#     green: "#A3BE8C"
-#     yellow: "#D7BA7D"
-#     blue: "#5e81ac"
-#     magenta: "#B48EAD"
-#     cyan: "#88c0d0"
-#     white: "#abb2bf"
-# 
-#   # Bright colors
-#   bright:
-#     black: "#4C566A"
-#     red: "#bf616a"
-#     green: "#A3BE8C"
-#     yellow: "#D7BA7D"
-#     blue: "#5e81ac"
-#     magenta: "#B48EAD"
-#     cyan: "#88c0d0"
-#     white: "#abb2bf"
+    # Normal colors
+    normal:
+      black:   '0x32344a'
+      red:     '0xf7768e'
+      green:   '0x9ece6a'
+      yellow:  '0xe0af68'
+      blue:    '0x7aa2f7'
+      magenta: '0xad8ee6'
+      cyan:    '0x449dab'
+      white:   '0x787c99'
 
-  normal:
-    black: "#4b5263"
-    red: "#e06c75"
-    green: "#98C379"
-    yellow: "#E5C07B"
-    blue: "#61AFEF"
-    magenta: "#C678DD"
-    cyan: "#56B6C2"
-    white: "#abb2bf"
+    # Bright colors
+    bright:
+      black:   '0x444b6a'
+      red:     '0xff7a93'
+      green:   '0xb9f27c'
+      yellow:  '0xff9e64'
+      blue:    '0x7da6ff'
+      magenta: '0xbb9af7'
+      cyan:    '0x0db9d7'
+      white:   '0xacb0d0'
 
-  # Bright colors
-  bright:
-    black: "#4b5263"
-    red: "#e06c75"
-    green: "#98C379"
-    yellow: "#E5C07B"
-    blue: "#61AFEF"
-    magenta: "#C678DD"
-    cyan: "#56B6C2"
-    white: "#abb2bf"
-
-  background_opacity: 0.8
+  colors: *tokyo-night
+  background_opacity: 1.0
 
   # Change cursor colors
   cursor:

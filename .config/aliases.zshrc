@@ -1,8 +1,14 @@
+#   __        _ _     _                _                               _ 
+#  / _\ __ _ (_|_) __| |   /\/\   __ _| |__  _ __ ___   ___   ___   __| |
+#  \ \ / _` || | |/ _` |  /    \ / _` | '_ \| '_ ` _ \ / _ \ / _ \ / _` |
+#  _\ \ (_| || | | (_| | / /\/\ \ (_| | | | | | | | | | (_) | (_) | (_| |
+#  \__/\__,_|/ |_|\__,_| \/    \/\__,_|_| |_|_| |_| |_|\___/ \___/ \__,_|
+#          |__/                                                          
+
 # Setting Neovim as a Pager
 
 export EDITOR='nvim'
 export MANPAGER='nvim +Man!'
-export TERMINAL='kitty'
 alias less=$PAGER
 alias zless=$PAGER
 
@@ -31,3 +37,8 @@ alias rm='rm -vi'
 alias cp='cp -vi'
 alias mv='mv -vi'
 alias ..='cd ..'
+
+
+# For when keys break
+alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate archlinux && sudo pacman-key --refresh-keys"
+

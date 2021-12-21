@@ -1,0 +1,8 @@
+## Enable copy to clipboard
+set selection-clipboard clipboard
+
+
+## Enable Sandbox
+set sanbox strict
+
+

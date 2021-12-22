@@ -154,6 +154,7 @@ bindcode $mod+Shift+90 	 move container to workspace  $ws10
 #bindsym $mod+Return exec xfce4-terminal
 #bindsym $mod+Return exec alacritty
 bindsym $mod+Return exec kitty 
+bindsym $mod+Shift+Return exec alacritty
 
 # kill focused window
 bindsym $mod+q kill

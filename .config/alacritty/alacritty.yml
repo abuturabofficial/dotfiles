@@ -1,5 +1,7 @@
-# Colors (One Darker)
+env:
+  TERM: xterm-256color
 # Note I am using alacritty-ligatures until ligatures make it upstream
+# Default colors
 schemes:
   # Tokyo Night theme, based on both:
   #   https://github.com/ghifarit53/tokyonight-vim
@@ -32,17 +34,19 @@ schemes:
       cyan:    '0x0db9d7'
       white:   '0xacb0d0'
 
-  colors: *tokyo-night
-  background_opacity: 1.0
+# normal dark theme
+colors: *tokyo-night
+
+background_opacity: 1.0
 
   # Change cursor colors
-  cursor:
-    text: "#3B4252"
-    cursor: "#ECEFF4"
+cursor:
+  text: "#3B4252"
+  cursor: "#ECEFF4"
 
 cursor:
   style:
-    blinking: always
+   blinking: always
 
 font:
   # The normal (roman) font face to use.
@@ -63,7 +67,7 @@ font:
     # Style can be specified to pick a specific face.
     style: Italic
 
-  size: 8.0
+  size: 7.5
 
   ligatures: true
 
@@ -88,6 +92,7 @@ window:
 # Allow terminal applications to change Alacritty's window title.
   dynamic_title: true
 
+## True color support
   # # If `true`, bold text is drawn using the bright color variants.
   # draw_bold_text_with_bright_colors: true
 

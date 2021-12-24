@@ -23,7 +23,10 @@ HISTSIZE=10000
 SAVEHIST=10000
 bindkey -v
 # End of lines configured by zsh-newuser-install
-
+## Export Paths
+export PATH=~/.emacs.d/bin/:$PATH
+export PATH=~/.npm-global/bin/:$PATH
+export PATH=~/.cargo/bin/:$PATH
 # Aliases
 source ~/.config/aliases.zshrc
 

@@ -1,6 +1,16 @@
 ## Enable copy to clipboard
 set selection-clipboard clipboard
-
+## Miscellaneous settings
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+set page padding 1
+map u scroll half-up
+map d scroll half-down
+map D toggle_page_mode
+map r reload
+map R rotate
+map i recolor
+map p print
 
 ## Enable Sandbox
 set sanbox strict

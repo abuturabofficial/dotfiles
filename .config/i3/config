@@ -375,8 +375,8 @@ exec --no-startup-id dex --autostart --environment i3
 # num lock activated
 #exec --no-startup-id numlockx on
 # configure multiple keyboard layouts and hotkey to switch (Alt+CAPSLOCK in this example)
-exec setxkbmap -layout us,pk
-exec setxkbmap -option 'grp:alt_shift_toggle'
+exec --no-startup-id setxkbmap -layout 'us,pk'
+exec --no-startup-id setxkbmap -option 'grp:alt_shift_toggle'
 # start conky:
 #exec_always --no-startup-id conky
 

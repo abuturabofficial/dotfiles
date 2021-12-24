@@ -8,7 +8,6 @@
 
 env:
   TERM: xterm-256color
-# Note I am using alacritty-ligatures until ligatures make it upstream
 # Default colors
 schemes:
   # Tokyo Night theme, based on both:
@@ -45,7 +44,7 @@ schemes:
 # normal dark theme
 colors: *tokyo-night
 
-background_opacity: 1.0
+background_opacity: 0.8
 
   # Change cursor colors
 cursor:
@@ -77,18 +76,6 @@ font:
 
   size: 7.5
 
-  ligatures: true
-
-  offset:
-    x: 0
-    y: 0
-  glyph_offset:
-    x: 0
-    y: 0
-window:
-  padding:
-    x: 2
-    y: 2
   # scrolling:
   #   # Maximum number of lines in the scrollback buffer.
   #   # Specifying '0' will disable scrolling.

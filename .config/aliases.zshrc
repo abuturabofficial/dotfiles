@@ -38,7 +38,7 @@ alias rm='rm -vi'
 alias cp='cp -vi'
 alias mv='mv -vi'
 alias ..='cd ..'
-
+alias cd='z'
 
 # For when keys break
 alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate archlinux && sudo pacman-key --refresh-keys"

@@ -376,7 +376,7 @@ exec --no-startup-id dex --autostart --environment i3
 #exec --no-startup-id numlockx on
 # configure multiple keyboard layouts and hotkey to switch (Alt+CAPSLOCK in this example)
 exec --no-startup-id setxkbmap -layout 'us,pk'
-exec --no-startup-id setxkbmap -option 'grp:alt_shift_toggle'
+exec --no-startup-id setxkbmap -option grp:alt_shift_toggle
 # start conky:
 #exec_always --no-startup-id conky
 
@@ -431,6 +431,7 @@ for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
 for_window [class="Gthumb" instance="gthumb"] floating enable
 for_window [class="feh"] floating enable
 for_window [class="Nm-connection-editor"] floating enable
+for_window [class="Virt-manager"] floating enable
 
 # set floating (nontiling) for special apps
 for_window [class="Xsane" instance="xsane"] floating enable

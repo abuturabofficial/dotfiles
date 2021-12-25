@@ -13,6 +13,6 @@ map i recolor
 map p print
 
 ## Enable Sandbox
-set sanbox strict
+#set sanbox strict
 
 

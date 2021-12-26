@@ -23,6 +23,8 @@ HISTSIZE=10000
 SAVEHIST=10000
 bindkey -v
 # End of lines configured by zsh-newuser-install
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
 ## Export Paths
 export PATH=~/.emacs.d/bin/:$PATH
 export PATH=~/.npm-global/bin/:$PATH

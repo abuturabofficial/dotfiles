@@ -34,9 +34,7 @@ font pango:Noto Sans Regular 10
 
 # set the mod key to the winkey:
 set $mod Mod4
-
-# set the capslock as aditional esc key and shift+capslok as normal capslock
-exec --no-startup-id setxkbmap -option caps:escape_shifted_capslock
+# start greenclip service on system startup
 exec --no-startup-id systemctl enable --now --user greenclip.service
 #####################
 # workspace layout: #
@@ -375,8 +373,8 @@ exec --no-startup-id dex --autostart --environment i3
 # num lock activated
 #exec --no-startup-id numlockx on
 # configure multiple keyboard layouts and hotkey to switch (Alt+CAPSLOCK in this example)
-exec_always "setxkbmap -model pc105 -layout us,pk -variant ,, -option grp:alt_shift_toggle"
 # start conky:
+exec_always "setxkbmap -model pc105 -layout us,pk -variant ,, -option grp:alt_shift_toggle ,, -option caps:escape_shifted_capslock"
 #exec_always --no-startup-id conky
 
 # start a script to setup displays

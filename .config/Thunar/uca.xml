@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<unique-id>1639468939982347-1</unique-id>
+	<command>kitty --working-directory %f </command>
+	<description>Example for a custom action</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+	<text-files/>
+</action>
+<action>
+	<icon>utilities-root-terminal</icon>
+	<name>Open a root Thunar here</name>
+	<unique-id>1639742271001960-1</unique-id>
+	<command>pkexec thunar %f</command>
+	<description>Getting root access</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+</actions>

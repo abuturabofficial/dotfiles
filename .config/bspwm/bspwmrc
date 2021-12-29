@@ -20,6 +20,8 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Yad state=floating
 bspc rule -a Xfce4-power-manager-settings state=floating
 bspc rule -a Galculator state=floating
+bspc rule -a feh state=floating
+bspc rule -a Pavucontrol state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
@@ -57,6 +59,9 @@ setxkbmap -option caps:escape_shifted_capslock
 
 # Start The GreenClip service
 systemctl --user enable --now greenclip.service
+
+# Keyboard Layout
+setxkbmap -model pc105 -layout us,pk -variant ,, -option grp:alt_shift_toggle ,, -option caps:escape_shifted_capslock
 
 # Cursor
 xsetroot -cursor_name left_ptr &

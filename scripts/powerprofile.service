@@ -1,0 +1,6 @@
+[Service]
+Environment=STARTUP_WAIT=30s
+ExecStart=/var/home/abuturab/.local/bin/powerprofile.sh
+
+[Install]
+WantedBy=default.target

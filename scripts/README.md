@@ -11,4 +11,4 @@ crontab -e
 ```
 ### ```contributions are welcomed```
 
-## Forked from [linux-setup-script](https://github.com/kulkarnip150/linux-setup-script)
+## Forked from [linux-setup-script](https://github.com/kulkarnip150/linux-setup-script/tree/main/extras)

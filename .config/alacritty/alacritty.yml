@@ -44,7 +44,7 @@ schemes:
 # normal dark theme
 colors: *tokyo-night
 
-background_opacity: 0.8
+window.opacity: 0.8
 
   # Change cursor colors
 cursor:
@@ -58,23 +58,23 @@ cursor:
 font:
   # The normal (roman) font face to use.
   normal:
-    family: FiraCode NF
+    family: CaskaydiaCove Nerd Font
     # Style can be specified to pick a specific face.
     style: Regular
 
   # The bold font face
   bold:
-    family: FiraCode NF
+    family: CaskaydiaCove Nerd Font
     # Style can be specified to pick a specific face.
     style: Bold
 
   # The italic font face
   italic:
-    family: FiraCode NF
+    family: CaskaydiaCove Nerd Font
     # Style can be specified to pick a specific face.
     style: Italic
 
-  size: 7.5
+  size: 16
 
   # scrolling:
   #   # Maximum number of lines in the scrollback buffer.
@@ -89,12 +89,17 @@ font:
 
 ## True color support
   # # If `true`, bold text is drawn using the bright color variants.
-  # draw_bold_text_with_bright_colors: true
+  draw_bold_text_with_bright_colors: true
 
   # selection:
   semantic_escape_chars: ',│`|:"'' ()[]{}<>'
   save_to_clipboard: true
   live_config_reload: true
+
+## Window Decoration
+  decorations: buttonless
+
+
 key_bindings:
   - { key: V, mods: Control|Shift, action: Paste }
   - { key: C, mods: Control|Shift, action: Copy }
@@ -103,4 +108,5 @@ key_bindings:
   - { key: Minus, mods: Control, action: DecreaseFontSize }
   # - { key: Add, mods: Control, action: IncreaseFontSize }
   # - { key: Subtract, mods: Control, action: DecreaseFontSize }
-  # - { key: N, mods: Control, action: SpawnNewInstance }
+  # - { key: N, mods: Control|Shift, action: SpawnNewInstance }
+  - { key: N, mods: Control|Shift, action: CreateNewWindow }

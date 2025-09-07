@@ -13,6 +13,21 @@ source ~/.local/share/omarchy/default/bash/rc
 # Set a custom prompt with the directory revealed (alternatively use https://starship.rs)
 # PS1="\W \[\e]0;\w\a\]$PS1"
 #
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
+  PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+export PATH
+
+# Case Insensitive Completion
+bind 'set completion-ignore-case On'
+
+# Environment Variables
+export PATH=~/.cargo/bin/:$PATH
+export PATH=~/.npm-global/bin:$PATH
+export PATH=~/.local/bin:$PATH
+export EDITOR="nvim"
+export BUNDLE_PATH=~/.gems
 
 # some more ls aliases
 alias ll='exa --long --all'

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Mastodon
+Comment=Mastodon
+Exec=omarchy-launch-webapp https://mastodon.social/home
+Terminal=false
+Type=Application
+Icon=/home/abuturab/.local/share/applications/icons/Mastodon.png
+StartupNotify=true

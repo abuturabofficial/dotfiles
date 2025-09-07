@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Keybr
+Comment=Keybr
+Exec=omarchy-launch-webapp https://www.keybr.com/
+Terminal=false
+Type=Application
+Icon=/home/abuturab/.local/share/applications/icons/Keybr.png
+StartupNotify=true

@@ -40,7 +40,7 @@ alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
 alias sudo='sudo '
 alias yayf="yay -Slq | fzf --multi --preview 'yay -Sii {1}' --preview-window=down:75% | xargs -ro yay -S"
-alias stow="stow -t ~/"
+# alias stow="stow -t ~/"
 
 # Bitwarden SSH Agent
 export SSH_AUTH_SOCK=/home/abuturab/.bitwarden-ssh-agent.sock

@@ -109,6 +109,7 @@
     "format": "",
     "format-disabled": "󰂲",
     "format-connected": "",
+    "format-connected-battery": " {device_battery_percentage}%",
     "tooltip-format": "Devices connected: {num_connections}",
     "on-click": "blueberry"
   },

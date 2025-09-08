@@ -7,8 +7,10 @@ error_symbol = "[✗](bold cyan)"
 success_symbol = "[❯](bold cyan)"
 
 [directory]
+read_only = " "
 truncation_length = 2
 truncation_symbol = "…/"
+use_logical_path = false
 repo_root_style = "bold cyan"
 repo_root_format = "[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) "
 

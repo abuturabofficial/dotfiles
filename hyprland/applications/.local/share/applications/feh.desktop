@@ -1,5 +1,5 @@
 [Desktop Entry]
-Name=feh (minimal image viewer)
+Name=Image Viewer
 Exec=feh %F
 Icon=feh
 Type=Application

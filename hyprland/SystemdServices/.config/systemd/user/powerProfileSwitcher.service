@@ -3,7 +3,7 @@ Description=Dynamic power profile based on battery state
 After=graphical.target
 
 [Service]
-ExecStart=%h/.local/bin/powerProfileSwitcher.sh
+ExecStart=%h/.config/scripts/powerProfileSwitcher.sh
 Environment=STARTUP_WAIT=30s
 Restart=always
 RestartSec=5s
@@ -15,7 +15,7 @@ ProtectHome=read-only
 PrivateTmp=true
 
 # Allow read/exec from ~/.local/bin where the script lives
-ReadWritePaths=%h/.local/bin
+ReadWritePaths=%h/.config/scripts
 
 [Install]
 WantedBy=default.target

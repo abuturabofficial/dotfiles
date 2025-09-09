@@ -2,3 +2,6 @@
 play = [{ run = 'mpv "$@"', orphan = true, for = "unix" }]
 edit = [{ run = 'nvim "$@"', block = true, for = "unix" }]
 open = [{ run = 'xdg-open "$@"', desc = "Open" }]
+
+[preview]
+wrap = "yes"

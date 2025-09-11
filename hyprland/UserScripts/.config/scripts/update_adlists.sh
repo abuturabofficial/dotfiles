@@ -14,6 +14,8 @@ adsDir="/home/abuturab/.config/scripts/opensnitchd/blocklists/domains/"
 
 # If you add new urls, remember to add the corresponding filename where it'll be save on disk.
 adsList=(
+  "https://raw.githubusercontent.com/r-a-y/mobile-hosts/master/AdguardDNS.txt"
+  "https://energized.pro/ultimate/hosts.txt"
   "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-hosts.txt"
   "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts"
   "https://hostfiles.frogeye.fr/multiparty-trackers-hosts.txt"
@@ -22,8 +24,10 @@ adsList=(
   "https://badmojr.github.io/1Hosts/Pro/hosts.txt"
   "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/hosts/tif.txt")
 adsListNames=(
+  "adguardSDNS.txt"
+  "energized-ultimate.txt"
   "urlhaus-filter-hosts.txt"
-  "stevenblack-unified-fakenews-gambling-porn"
+  "stevenblack-unified-fakenews-gambling-porn.txt"
   "multiparty-trackers-hosts.txt"
   "firstparty-trackers-hosts.txt"
   "hagezi-pro.txt"

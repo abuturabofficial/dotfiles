@@ -34,6 +34,7 @@ alias ll='exa --long --all'
 alias la='exa -a --icons'
 alias l='exa -1 --icons'
 alias ls='exa --icons'
+alias tree='exa --tree'
 alias vim="nvim "
 # Alias 'cat' to 'bat' or 'batcat' depending on availability
 if command -v bat &>/dev/null; then

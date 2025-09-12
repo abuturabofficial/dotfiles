@@ -1,1 +1,0 @@
-/home/abuturab/.config/omarchy/current/theme/neovim.lua

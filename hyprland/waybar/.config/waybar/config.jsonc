@@ -8,11 +8,12 @@
   "modules-center": ["clock", "custom/update"],
   "modules-right": [
     "group/tray-expander",
+    "hyprland/language",
     "bluetooth",
-    "network",
     "pulseaudio",
     "custom/updates",
     "cpu",
+    "network",
     "battery"
   ],
   "hyprland/workspaces": {
@@ -129,7 +130,14 @@
     "format-muted": "󰝟",
     "format-icons": {
       "default": ["", "", ""]
-    }
+    },
+"hyprland/language": {
+    "format": "Lang: {}",
+    "format-en": "QWERTY",
+    "format-en-colemak_dh_iso": "AMERICA (Colemak-DH)",
+    "format-pk": "Urdu (Pakistan)",
+    "keyboard-name": "at-translated-set-2-keyboard"
+},
   },
   "group/tray-expander": {
     "orientation": "inherit",

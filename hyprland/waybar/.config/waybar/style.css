@@ -63,20 +63,20 @@ tooltip {
 }
 
 /* Custom updates module */
-#custom-updates {
-    font-size: 10px;
-    font-family: 'MesloLGS NF';
-}
+/* #custom-updates { */
+/*     font-size: 10px; */
+/*     font-family: 'MesloLGS NF'; */
+/* } */
 
 /* Update colors based on Waybar JSON "class" */
-#custom-updates.green {
-    color: #00ff00; /* green for few/no updates */
-}
-
-#custom-updates.yellow {
-    color: #ffff00; /* yellow for moderate updates */
-}
-
-#custom-updates.red {
-    color: #ff0000; /* red for many updates */
-}
+/* #custom-updates.green { */
+/*     color: #00ff00; */
+/* } */
+/**/
+/* #custom-updates.yellow { */
+/*     color: #ffff00; */
+/* } */
+/**/
+/* #custom-updates.red { */
+/*     color: #ff0000; */
+/* } */

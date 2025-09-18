@@ -5,7 +5,7 @@ NAME="kali"
 HOME_DIR="$HOME/.containers/$NAME"
 IMAGE="docker.io/kalilinux/kali-rolling:latest"
 PACKAGES="systemd libpam-systemd pipewire-audio-client-libraries zsh"
-BOOTSTRAP="$HOME/.config/distrobox/init.d/kali-bootstrap.sh"
+# BOOTSTRAP="$HOME/.config/distrobox/init.d/kali-bootstrap.sh"
 
 # Check if the container exists
 if distrobox-list | grep -q "^$NAME\$"; then

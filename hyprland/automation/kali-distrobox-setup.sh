@@ -15,6 +15,7 @@ sudo apt install -y \
     zoxide \
     neovim \
     bat \
+    command-not-found \
     tealdeer
 
 echo "🐚 Setting zsh as default shell..."

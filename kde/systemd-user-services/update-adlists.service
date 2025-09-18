@@ -1,0 +1,6 @@
+[Unit]
+Description=Update OpenSnitch adlists
+
+[Service]
+Type=oneshot
+ExecStart=/home/abuturab/.config/scripts/update_adlists.sh

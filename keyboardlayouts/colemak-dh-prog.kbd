@@ -1,0 +1,65 @@
+;; ===============================
+;; Universal Colemak-DH Programmer Layout
+;; Works on Linux, Windows, macOS
+;; ===============================
+
+(defcfg
+  ;; --- EDIT THIS SECTION PER OS ---
+  ;; Linux:
+  ;; input  (device-file "/dev/input/by-path/platform-i8042-serio-0-event-kbd")
+  ;; output (uinput-sink "KMonad output")
+
+  ;; Windows:
+  ;; input  (low-level-hook)
+  ;; output (send-event-sink)
+
+  ;; macOS:
+  ;; input  (iokit-name "Apple Internal Keyboard / Trackpad")
+  ;; output (kext)
+
+  fallthrough true
+  allow-cmd true
+)
+
+;; --- Physical key mapping (Colemak-DH base) ---
+(defsrc
+  q w f p b    j l u y ; [ ]
+  a r s t g    m n e i o ' \
+  z x c d v    k h , . /
+)
+
+;; --- Base Layer ---
+(deflayer base
+  q w f p b    j l u y ; [ ]
+  a r s t g    m n e i o ' \
+  z x c d v    k h , . /
+  caps spnav num
+)
+
+;; --- Symbols Layer ---
+(deflayer symbols
+  [ ] { } ( )   < > = + * /
+  - _ : ; " '   , . | & ^ %
+  ~ ` @ # $     ? ! \ : ; esc
+)
+
+;; --- Navigation Layer ---
+(deflayer nav
+  tab home up end   pgup
+  caps left down right pgdn
+  del  bspc ins  ret   esc
+)
+
+;; --- Numbers Layer ---
+(deflayer num
+  1 2 3 4 5    6 7 8 9 0
+  ! @ # $ %    ^ & * ( )
+  - = [ ] { }  _ + / \ | 
+)
+
+;; --- Aliases (dual-role keys) ---
+(defalias
+  caps (tap-hold-next-release 200 esc (layer-toggle symbols))
+  spnav (tap-hold-next-release 200 space (layer-toggle nav))
+  num   (tap-hold-next-release 200 ralt (layer-toggle num))
+)

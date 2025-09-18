@@ -1,0 +1,19 @@
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+[pull]
+	rebase = true
+[init]
+	defaultBranch = master
+[gpg]
+  format = ssh
+[user]
+  signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINT/bVw+MTYFuZjYsYk/zhBc1YC6KfbiFJ0jp7y47amf"
+	name = AbuTurab
+	email = 68259771+abuturabofficial@users.noreply.github.com
+[commit]
+  gpgsign = true
+[core]
+	editor = nvim

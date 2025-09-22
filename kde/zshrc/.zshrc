@@ -132,11 +132,11 @@ export EDITOR="nvim"
 export BUNDLE_PATH=~/.gems
 
 # some more ls aliases
-alias ll='exa --long --all --icons'
-alias la='exa -a --icons'
-alias l='exa -1 --icons'
-alias ls='exa --icons'
-alias tree='exa --tree --icons'
+alias ll='exa --long --all --icons --group-directories-first'
+alias la='exa -a --icons --group-directories-first'
+alias l='exa -1 --icons --group-directories-first'
+alias ls='exa --icons --group-directories-first'
+alias tree='exa --tree --icons --group-directories-first'
 alias vim="nvim "
 alias cp='cp -v --reflink=auto'
 alias cat='bat'
@@ -152,7 +152,7 @@ alias mkdir="mkdir -v"
 alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
 alias sudo='sudo '
-alias yayf="yay -Slq | fzf --multi --preview 'yay -Sii {1}' --preview-window=down:75% | xargs -ro yay -S"
+# alias yayf="yay -Slq | fzf --multi --preview 'yay -Sii {1}' --preview-window=down:75% | xargs -ro yay -S"
 # alias stow="stow -t ~/"
 
 # Bitwarden SSH agent

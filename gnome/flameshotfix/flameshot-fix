@@ -1,0 +1,5 @@
+#!/bin/sh
+# Fix 'Unable to Capture Screen'
+export QT_QPA_PLATFORM=wayland
+# Fixes Copy to Clipboard not working
+sh -c "QT_QPA_PLATFORM=xcb flameshot gui -r | wl-copy"

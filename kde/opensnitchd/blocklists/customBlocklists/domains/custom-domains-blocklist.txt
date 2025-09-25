@@ -1,0 +1,18 @@
+#######################################
+## Some of my custom blocked domains ##
+#######################################
+
+# Mega.nz Statistics
+0.0.0.0 reqstat.api.mega.co.nz
+
+# Calculator (qcalc) Foreign Currency Exchange
+0.0.0.0 www.ecb.europa.eu
+0.0.0.0 ecb.europa.eu
+
+# Youtube Thumbnails
+0.0.0.0 ytimg.com
+0.0.0.0 yt3.ggpht.com
+0.0.0.0 i.ytimg.com
+
+# Youtube Suggest Queries
+0.0.0.0 suggestqueries-client6.youtube.com

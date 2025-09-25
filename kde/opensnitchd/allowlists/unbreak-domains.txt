@@ -1,0 +1,6 @@
+# List of Domains which shouldn't be blocked by any blocklists.
+127.0.0.1 a.nel.cloudflare.com
+127.0.0.1 sajidmahmood.com
+127.0.0.1 wiki.sajidmahmood.com
+127.0.0.1 proton.me
+127.0.0.1 api.proton.me

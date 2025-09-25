@@ -1,0 +1,33 @@
+{
+    "created": "2025-09-16T09:37:15.000000Z",
+    "name": "allow-always-list-usr-bin-warp-svc-162-159-198-2-4500-0",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.ip",
+                "data": "162.159.198.2"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "4500"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "0"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/bin/warp-svc"
+            }
+        ]
+    }
+}

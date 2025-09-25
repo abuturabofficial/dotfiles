@@ -1,0 +1,38 @@
+{
+    "created": "2025-09-16T09:37:15.000000Z",
+    "name": "allow-always-list-curl-h-accept-application-vnd-mason-registry-v1-json-q-1-0-application-json-q-0-8-h-user-agent-mason-nvim-v2-0-api-mason-registry-dev-443-1000-0",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "api.mason-registry.dev"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/bin/curl"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "curl -H Accept: application/vnd.mason-registry.v1+json; q=1.0, application/json; q=0.8 -H User-Agent: mason.nvim v2.0.1 (+https://github.com/mason-org/mason.nvim) -fsSL -X GET --connect-timeout 30 https://api.mason-registry.dev/api/github/mason-org/mason.nvim/releases/latest"
+            }
+        ]
+    }
+}

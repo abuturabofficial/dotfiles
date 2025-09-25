@@ -1,0 +1,38 @@
+{
+    "created": "2025-09-17T10:56:09.000000Z",
+    "name": "allow-always-list-curl-silent-show-error-l-https-github-com-valdezfomar-tree-sitter-desktop-archive-6d66eea37afa1d6bc1e25ef45711-github-com-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "github.com"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/bin/curl"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "curl --silent --show-error -L https://github.com/ValdezFOmar/tree-sitter-desktop/archive/6d66eea37afa1d6bc1e25ef457113743df42416d.tar.gz --output tree-sitter-desktop.tar.gz"
+            }
+        ]
+    }
+}

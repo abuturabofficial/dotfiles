@@ -1,0 +1,33 @@
+{
+    "created": "2025-09-16T09:37:15.000000Z",
+    "name": "allow-always-list-usr-bin-dnscrypt-proxy-config-etc-dnscrypt-proxy-dnscrypt-proxy-toml-2606-4700-64-443-62582",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "network",
+                "operand": "dest.network",
+                "data": "2606:4700::/64"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "62582"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "/usr/bin/dnscrypt-proxy --config /etc/dnscrypt-proxy/dnscrypt-proxy.toml"
+            }
+        ]
+    }
+}

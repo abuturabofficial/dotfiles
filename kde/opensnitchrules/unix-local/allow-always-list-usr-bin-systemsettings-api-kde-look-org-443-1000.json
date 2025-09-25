@@ -1,0 +1,33 @@
+{
+    "created": "2025-09-17T07:27:37.000000Z",
+    "name": "allow-always-list-usr-bin-systemsettings-api-kde-look-org-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "api.kde-look.org"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "/usr/bin/systemsettings"
+            }
+        ]
+    }
+}

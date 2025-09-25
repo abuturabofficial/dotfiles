@@ -1,0 +1,38 @@
+{
+    "created": "2025-09-16T09:37:15.000000Z",
+    "name": "allow-always-list-curl-silent-https-hostfiles-frogeye-fr-firstparty-trackers-hosts-txt-o-home-abuturab-config-scripts-opensnitch-hostfiles-frogeye-fr-53-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "hostfiles.frogeye.fr"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "53"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/bin/curl"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "curl --silent https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt -o /home/abuturab/.config/scripts/opensnitchd/blocklists/domains//firstparty-trackers-hosts.txt"
+            }
+        ]
+    }
+}

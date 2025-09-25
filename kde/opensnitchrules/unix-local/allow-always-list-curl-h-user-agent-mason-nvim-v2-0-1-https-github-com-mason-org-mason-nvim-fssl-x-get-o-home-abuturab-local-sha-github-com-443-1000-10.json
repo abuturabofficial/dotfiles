@@ -1,0 +1,38 @@
+{
+    "created": "2025-09-22T07:35:19.000000Z",
+    "name": "allow-always-list-curl-h-user-agent-mason-nvim-v2-0-1-https-github-com-mason-org-mason-nvim-fssl-x-get-o-home-abuturab-local-sha-github-com-443-1000-10",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "github.com"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/bin/curl"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "curl -H User-Agent: mason.nvim v2.0.1 (+https://github.com/mason-org/mason.nvim) -fsSL -X GET -o /home/abuturab/.local/share/nvim/mason/registries/github/mason-org/mason-registry/registry.json.zip --connect-timeout 30 https://github.com/mason-org/mason-registry/releases/download/2025-09-21-great-cow/registry.json.zip"
+            }
+        ]
+    }
+}

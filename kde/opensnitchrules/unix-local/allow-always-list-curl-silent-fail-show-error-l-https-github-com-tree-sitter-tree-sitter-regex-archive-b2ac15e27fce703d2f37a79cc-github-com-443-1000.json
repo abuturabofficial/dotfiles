@@ -1,0 +1,38 @@
+{
+    "created": "2025-09-20T17:21:43.000000Z",
+    "name": "allow-always-list-curl-silent-fail-show-error-l-https-github-com-tree-sitter-tree-sitter-regex-archive-b2ac15e27fce703d2f37a79cc-github-com-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "github.com"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/bin/curl"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "curl --silent --fail --show-error -L https://github.com/tree-sitter/tree-sitter-regex/archive/b2ac15e27fce703d2f37a79ccd94a5c0cbe9720b.tar.gz --output /home/abuturab/.cache/nvim/tree-sitter-regex.tar.gz"
+            }
+        ]
+    }
+}

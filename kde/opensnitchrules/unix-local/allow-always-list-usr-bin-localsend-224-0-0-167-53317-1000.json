@@ -1,0 +1,33 @@
+{
+    "created": "2025-09-16T17:45:38.000000Z",
+    "name": "allow-always-list-usr-bin-localsend-224-0-0-167-53317-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.ip",
+                "data": "224.0.0.167"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "53317"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "/usr/bin/localsend"
+            }
+        ]
+    }
+}

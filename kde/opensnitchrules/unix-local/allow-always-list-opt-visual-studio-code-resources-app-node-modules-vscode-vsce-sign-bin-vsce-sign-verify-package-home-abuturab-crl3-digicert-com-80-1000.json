@@ -1,0 +1,33 @@
+{
+    "created": "2025-09-16T09:37:15.000000Z",
+    "name": "allow-always-list-opt-visual-studio-code-resources-app-node-modules-vscode-vsce-sign-bin-vsce-sign-verify-package-home-abuturab-crl3-digicert-com-80-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "crl3.digicert.com"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "80"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "/opt/visual-studio-code/resources/app/node_modules/@vscode/vsce-sign/bin/vsce-sign verify --package /home/abuturab/.config/Code/CachedExtensionVSIXs/ms-python.python-2025.14.0-linux-x64 --signaturearchive /home/abuturab/.config/Code/CachedExtensionVSIXs/ms-python.python-2025.14.0-linux-x64.sigzip"
+            }
+        ]
+    }
+}

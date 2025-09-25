@@ -1,0 +1,38 @@
+{
+    "created": "2025-09-22T07:37:23.000000Z",
+    "name": "allow-always-list-curl-silent-fail-show-error-l-https-github-com-tree-sitter-tree-sitter-javascript-archive-58404d8cf191d69f2674-codeload-github-com-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "codeload.github.com"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/bin/curl"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "curl --silent --fail --show-error -L https://github.com/tree-sitter/tree-sitter-javascript/archive/58404d8cf191d69f2674a8fd507bd5776f46cb11.tar.gz --output /home/abuturab/.cache/nvim/tree-sitter-javascript.tar.gz"
+            }
+        ]
+    }
+}

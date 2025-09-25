@@ -1,0 +1,38 @@
+{
+    "created": "2025-09-20T10:52:52.000000Z",
+    "name": "allow-always-list-pacman-sy-dbpath-tmp-arch-update-1000-checkupdates-75ynm-logfile-dev-null-at-cachyos-org-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "at.cachyos.org"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/bin/pacman"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "pacman -Sy --dbpath /tmp/arch-update-1000/checkupdates-75Ynm --logfile /dev/null"
+            }
+        ]
+    }
+}

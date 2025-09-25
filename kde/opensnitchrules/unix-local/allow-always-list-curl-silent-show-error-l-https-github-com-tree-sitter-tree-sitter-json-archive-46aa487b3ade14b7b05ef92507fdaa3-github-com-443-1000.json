@@ -1,0 +1,38 @@
+{
+    "created": "2025-09-17T10:00:49.000000Z",
+    "name": "allow-always-list-curl-silent-show-error-l-https-github-com-tree-sitter-tree-sitter-json-archive-46aa487b3ade14b7b05ef92507fdaa3-github-com-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "github.com"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/bin/curl"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "curl --silent --show-error -L https://github.com/tree-sitter/tree-sitter-json/archive/46aa487b3ade14b7b05ef92507fdaa3915a662a3.tar.gz --output tree-sitter-json.tar.gz"
+            }
+        ]
+    }
+}

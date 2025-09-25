@@ -1,0 +1,33 @@
+{
+    "created": "2025-09-17T11:33:19.000000Z",
+    "name": "allow-always-list-opt-visual-studio-code-code-vscode-sync-trafficmanager-net-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "vscode-sync.trafficmanager.net"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/opt/visual-studio-code/code"
+            }
+        ]
+    }
+}

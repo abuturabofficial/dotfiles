@@ -1,0 +1,33 @@
+{
+    "created": "2025-09-16T09:37:15.000000Z",
+    "name": "allow-always-list-usr-bin-dnscrypt-proxy-config-etc-dnscrypt-proxy-dnscrypt-proxy-toml-odoh-cloudflare-dns-com-53-62582",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "odoh.cloudflare-dns.com"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "53"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "62582"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "/usr/bin/dnscrypt-proxy --config /etc/dnscrypt-proxy/dnscrypt-proxy.toml"
+            }
+        ]
+    }
+}

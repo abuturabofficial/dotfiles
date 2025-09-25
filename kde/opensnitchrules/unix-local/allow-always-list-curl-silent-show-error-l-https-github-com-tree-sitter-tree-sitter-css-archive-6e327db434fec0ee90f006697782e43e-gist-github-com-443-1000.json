@@ -1,0 +1,38 @@
+{
+    "created": "2025-09-19T07:46:11.000000Z",
+    "name": "allow-always-list-curl-silent-show-error-l-https-github-com-tree-sitter-tree-sitter-css-archive-6e327db434fec0ee90f006697782e43e-gist-github-com-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "gist.github.com"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/bin/curl"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "curl --silent --show-error -L https://github.com/tree-sitter/tree-sitter-css/archive/6e327db434fec0ee90f006697782e43ec855adf5.tar.gz --output tree-sitter-css.tar.gz"
+            }
+        ]
+    }
+}

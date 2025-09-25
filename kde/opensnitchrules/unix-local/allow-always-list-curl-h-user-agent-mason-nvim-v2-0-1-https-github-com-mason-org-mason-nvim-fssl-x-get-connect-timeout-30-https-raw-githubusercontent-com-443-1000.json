@@ -1,0 +1,38 @@
+{
+    "created": "2025-09-16T09:37:15.000000Z",
+    "name": "allow-always-list-curl-h-user-agent-mason-nvim-v2-0-1-https-github-com-mason-org-mason-nvim-fssl-x-get-connect-timeout-30-https-raw-githubusercontent-com-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "raw.githubusercontent.com"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/bin/curl"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "curl -H User-Agent: mason.nvim v2.0.1 (+https://github.com/mason-org/mason.nvim) -fsSL -X GET --connect-timeout 30 https://raw.githubusercontent.com/LuaLS/vscode-lua/master/package.json"
+            }
+        ]
+    }
+}

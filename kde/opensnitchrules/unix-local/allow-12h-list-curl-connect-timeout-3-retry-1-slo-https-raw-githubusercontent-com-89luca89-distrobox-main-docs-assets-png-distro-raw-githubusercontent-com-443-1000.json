@@ -1,0 +1,38 @@
+{
+    "created": "2025-09-16T09:37:15.000000Z",
+    "name": "allow-12h-list-curl-connect-timeout-3-retry-1-slo-https-raw-githubusercontent-com-89luca89-distrobox-main-docs-assets-png-distro-raw-githubusercontent-com-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "raw.githubusercontent.com"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/bin/curl"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "curl --connect-timeout 3 --retry 1 -sLo - https://raw.githubusercontent.com/89luca89/distrobox/main/docs/assets/png/distros/kali-distrobox.png"
+            }
+        ]
+    }
+}

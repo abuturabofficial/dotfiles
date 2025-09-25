@@ -1,0 +1,38 @@
+{
+    "created": "2025-09-22T07:38:15.000000Z",
+    "name": "allow-always-list-curl-silent-fail-show-error-l-https-github-com-tree-sitter-grammars-tree-sitter-printf-archive-ec4e5674573d555-codeload-github-com-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "codeload.github.com"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/bin/curl"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "curl --silent --fail --show-error -L https://github.com/tree-sitter-grammars/tree-sitter-printf/archive/ec4e5674573d5554fccb87a887c97d4aec489da7.tar.gz --output /home/abuturab/.cache/nvim/tree-sitter-printf.tar.gz"
+            }
+        ]
+    }
+}

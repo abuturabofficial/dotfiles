@@ -1,0 +1,25 @@
+{
+    "created": "2025-09-16T09:37:15.000000Z",
+    "name": "000-block-domains",
+    "description": "Blocklists for ads,trackers, malware etc consisting of domains for blocking.",
+    "enabled": true,
+    "precedence": true,
+    "action": "reject",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "regexp",
+                "operand": "dest.port",
+                "data": "^(53|443|443)$"
+            },
+            {
+                "type": "lists",
+                "operand": "lists.domains",
+                "data": "/home/abuturab/.config/scripts/opensnitchd/blocklists/domains/"
+            }
+        ]
+    }
+}

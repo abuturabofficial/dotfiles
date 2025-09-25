@@ -1,0 +1,38 @@
+{
+    "created": "2025-09-20T17:20:21.000000Z",
+    "name": "allow-always-list-curl-fail-location-silent-show-error-create-dirs-output-home-abuturab-local-share-nvim-lazy-blink-cmp-target-r-github-com-443-1000-0",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "github.com"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/bin/curl"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "curl --fail --location --silent --show-error --create-dirs --output /home/abuturab/.local/share/nvim/lazy/blink.cmp/target/release/libblink_cmp_fuzzy.so.sha256 https://github.com/saghen/blink.cmp/releases/download/v1.7.0/x86_64-unknown-linux-gnu.so.sha256"
+            }
+        ]
+    }
+}

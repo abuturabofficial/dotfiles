@@ -1,0 +1,38 @@
+{
+    "created": "2025-09-17T11:00:28.000000Z",
+    "name": "allow-always-list-curl-silent-show-error-l-https-github-com-justinmk-tree-sitter-ini-archive-32b31863f222bf22eb43b07d4e9be8017e3-codeload-github-com-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "codeload.github.com"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/bin/curl"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "curl --silent --show-error -L https://github.com/justinmk/tree-sitter-ini/archive/32b31863f222bf22eb43b07d4e9be8017e36fb31.tar.gz --output tree-sitter-ini.tar.gz"
+            }
+        ]
+    }
+}

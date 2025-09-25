@@ -1,0 +1,38 @@
+{
+    "created": "2025-09-16T09:37:15.000000Z",
+    "name": "allow-always-list-curl-silent-show-error-l-https-gitlab-com-whynothugo-tree-sitter-jsonc-archive-02b01653c8a1c198ae7287d566efa86-gitlab-com-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "gitlab.com"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/bin/curl"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "curl --silent --show-error -L https://gitlab.com/WhyNotHugo/tree-sitter-jsonc/-/archive/02b01653c8a1c198ae7287d566efa86a135b30d5/tree-sitter-jsonc-02b01653c8a1c198ae7287d566efa86a135b30d5.tar.gz --output tree-sitter-jsonc.tar.gz"
+            }
+        ]
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "created": "2025-09-16T17:32:30.000000Z",
+    "name": "allow-always-list-usr-bin-curl-qgb-flc-retry-3-retry-delay-3-o-libsodium-1-0-18-tar-gz-part-https-github-com-jedisct1-libsodium-release-assets-githubusercontent-com-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "release-assets.githubusercontent.com"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "/usr/bin/curl -qgb \"\" -fLC - --retry 3 --retry-delay 3 -o libsodium-1.0.18.tar.gz.part https://github.com/jedisct1/libsodium/releases/download/1.0.18-RELEASE/libsodium-1.0.18.tar.gz"
+            }
+        ]
+    }
+}

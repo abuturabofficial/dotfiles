@@ -1,0 +1,33 @@
+{
+    "created": "2025-09-16T09:37:15.000000Z",
+    "name": "allow-always-list-usr-lib-systemd-systemd-networkd-10-119-65-121-67-979",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.ip",
+                "data": "10.119.65.121"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "67"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "979"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/lib/systemd/systemd-networkd"
+            }
+        ]
+    }
+}

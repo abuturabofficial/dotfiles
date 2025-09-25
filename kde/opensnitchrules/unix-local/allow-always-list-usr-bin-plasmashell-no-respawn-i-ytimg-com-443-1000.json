@@ -1,0 +1,33 @@
+{
+    "created": "2025-09-16T09:46:39.000000Z",
+    "name": "allow-always-list-usr-bin-plasmashell-no-respawn-i-ytimg-com-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "i.ytimg.com"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "/usr/bin/plasmashell --no-respawn"
+            }
+        ]
+    }
+}

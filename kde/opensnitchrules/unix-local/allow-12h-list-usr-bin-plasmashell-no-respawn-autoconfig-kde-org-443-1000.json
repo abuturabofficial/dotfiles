@@ -1,0 +1,33 @@
+{
+    "created": "2025-09-24T09:23:30.000000Z",
+    "name": "allow-12h-list-usr-bin-plasmashell-no-respawn-autoconfig-kde-org-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "12h",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "autoconfig.kde.org"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "/usr/bin/plasmashell --no-respawn"
+            }
+        ]
+    }
+}

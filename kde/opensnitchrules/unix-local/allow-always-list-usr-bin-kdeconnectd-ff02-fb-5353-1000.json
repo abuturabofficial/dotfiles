@@ -1,0 +1,33 @@
+{
+    "created": "2025-09-16T11:52:21.000000Z",
+    "name": "allow-always-list-usr-bin-kdeconnectd-ff02-fb-5353-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.ip",
+                "data": "ff02::fb"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "5353"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "/usr/bin/kdeconnectd"
+            }
+        ]
+    }
+}

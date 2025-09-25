@@ -1,0 +1,33 @@
+{
+    "created": "2025-09-16T09:37:15.000000Z",
+    "name": "allow-12h-list-usr-bin-pasta-config-net-dns-forward-169-254-1-1-t-none-u-none-t-none-u-none-no-map-gw-quiet-netns-run-user-1000-mirror-nyist-edu-cn-80-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "mirror.nyist.edu.cn"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "80"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "/usr/bin/pasta --config-net --dns-forward 169.254.1.1 -t none -u none -T none -U none --no-map-gw --quiet --netns /run/user/1000/netns/netns-17cfb235-e1e2-82d7-5708-9f48b36265ea --map-guest-addr 169.254.1.2"
+            }
+        ]
+    }
+}

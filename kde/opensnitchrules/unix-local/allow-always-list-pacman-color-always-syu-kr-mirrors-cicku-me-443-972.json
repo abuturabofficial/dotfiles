@@ -1,0 +1,38 @@
+{
+    "created": "2025-09-20T11:00:28.000000Z",
+    "name": "allow-always-list-pacman-color-always-syu-kr-mirrors-cicku-me-443-972",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "kr.mirrors.cicku.me"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "972"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/bin/pacman"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "pacman --color always -Syu"
+            }
+        ]
+    }
+}

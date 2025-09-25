@@ -1,0 +1,33 @@
+{
+    "created": "2025-09-20T11:04:17.000000Z",
+    "name": "allow-always-list-usr-bin-curl-qgb-flc-retry-3-retry-delay-3-o-code-x64-1-104-1-tar-gz-part-https-update-code-visualstudio-com-1-update-code-visualstudio-com-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "update.code.visualstudio.com"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "/usr/bin/curl -qgb \"\" -fLC - --retry 3 --retry-delay 3 -o code_x64_1.104.1.tar.gz.part https://update.code.visualstudio.com/1.104.1/linux-x64/stable"
+            }
+        ]
+    }
+}

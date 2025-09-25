@@ -1,0 +1,38 @@
+{
+    "created": "2025-09-16T10:38:22.000000Z",
+    "name": "allow-always-list-rate-mirrors-save-tmp-tmp-cmqjykfcze-allow-root-arch-fetch-mirrors-timeout-300000-completion-1-max-delay-10000-cachyos-org-443-0",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "cachyos.org"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "0"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/bin/rate-mirrors"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "rate-mirrors --save /tmp/tmp.CmQjyKfcze --allow-root arch --fetch-mirrors-timeout=300000 --completion=1 --max-delay=10000"
+            }
+        ]
+    }
+}

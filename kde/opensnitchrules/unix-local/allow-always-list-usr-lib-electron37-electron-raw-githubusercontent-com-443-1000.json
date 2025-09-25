@@ -1,0 +1,33 @@
+{
+    "created": "2025-09-18T17:59:09.000000Z",
+    "name": "allow-always-list-usr-lib-electron37-electron-raw-githubusercontent-com-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "raw.githubusercontent.com"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/lib/electron37/electron"
+            }
+        ]
+    }
+}

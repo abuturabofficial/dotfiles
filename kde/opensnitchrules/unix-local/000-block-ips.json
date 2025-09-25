@@ -1,0 +1,14 @@
+{
+    "created": "2025-09-16T09:37:15.000000Z",
+    "name": "000-block-ips",
+    "description": "Blocklists for malware and tracking IPs.",
+    "enabled": true,
+    "precedence": true,
+    "action": "reject",
+    "duration": "always",
+    "operator": {
+        "type": "lists",
+        "operand": "lists.ips",
+        "data": "/home/abuturab/.config/scripts/opensnitchd/blocklists/ips"
+    }
+}

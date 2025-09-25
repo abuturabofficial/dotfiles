@@ -1,0 +1,12 @@
+{
+    "created": "2025-09-16T09:37:15.000000Z",
+    "name": "001-allow-localhost",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "network",
+        "operand": "dest.network",
+        "data": "127.0.0.0/8"
+    }
+}

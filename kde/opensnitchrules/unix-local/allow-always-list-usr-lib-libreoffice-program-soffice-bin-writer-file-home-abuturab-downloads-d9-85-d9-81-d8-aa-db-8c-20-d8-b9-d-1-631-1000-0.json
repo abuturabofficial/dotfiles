@@ -1,0 +1,33 @@
+{
+    "created": "2025-09-16T09:37:15.000000Z",
+    "name": "allow-always-list-usr-lib-libreoffice-program-soffice-bin-writer-file-home-abuturab-downloads-d9-85-d9-81-d8-aa-db-8c-20-d8-b9-d-1-631-1000-0",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.ip",
+                "data": "::1"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "631"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "/usr/lib/libreoffice/program/soffice.bin --writer file:///home/abuturab/Downloads/%D9%85%D9%81%D8%AA%DB%8C%20%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D9%84%DB%81%20%D9%85%D8%B1%D9%88%D9%B9%20-%20Copy.docx --splash-pipe=5"
+            }
+        ]
+    }
+}

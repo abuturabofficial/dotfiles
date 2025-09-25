@@ -1,0 +1,38 @@
+{
+    "created": "2025-09-16T09:37:15.000000Z",
+    "name": "allow-always-list-curl-silent-show-error-l-https-github-com-mdeiml-tree-sitter-markdown-archive-413285231ce8fa8b11e7074bbe265b48-codeload-github-com-443-1000-0",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "codeload.github.com"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/bin/curl"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "curl --silent --show-error -L https://github.com/MDeiml/tree-sitter-markdown/archive/413285231ce8fa8b11e7074bbe265b48aa7277f9.tar.gz --output tree-sitter-markdown_inline.tar.gz"
+            }
+        ]
+    }
+}

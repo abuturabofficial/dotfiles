@@ -1,0 +1,38 @@
+{
+    "created": "2025-09-16T17:15:51.000000Z",
+    "name": "allow-always-list-pacman-sy-dbpath-tmp-arch-update-1000-checkupdates-uucik-logfile-dev-null-kr-mirrors-cicku-me-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "kr.mirrors.cicku.me"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/bin/pacman"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "pacman -Sy --dbpath /tmp/arch-update-1000/checkupdates-uUCiK --logfile /dev/null"
+            }
+        ]
+    }
+}

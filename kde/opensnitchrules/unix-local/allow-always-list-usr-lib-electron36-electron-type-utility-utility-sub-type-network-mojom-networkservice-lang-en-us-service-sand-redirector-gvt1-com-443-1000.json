@@ -1,0 +1,33 @@
+{
+    "created": "2025-09-16T11:36:11.000000Z",
+    "name": "allow-always-list-usr-lib-electron36-electron-type-utility-utility-sub-type-network-mojom-networkservice-lang-en-us-service-sand-redirector-gvt1-com-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "redirector.gvt1.com"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "/usr/lib/electron36/electron --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --enable-crash-reporter=64832b8f-7fd2-417c-9202-eed92bc5a803,no_channel --user-data-dir=/home/abuturab/.config/Bitwarden --shared-files=v8_context_snapshot_data:100 --field-trial-handle=3,i,10282660705595940447,5298360389670280822,262144 --enable-features=PdfUseShowSaveFilePicker --disable-features=SpareRendererForSitePerProcess --variations-seed-version"
+            }
+        ]
+    }
+}

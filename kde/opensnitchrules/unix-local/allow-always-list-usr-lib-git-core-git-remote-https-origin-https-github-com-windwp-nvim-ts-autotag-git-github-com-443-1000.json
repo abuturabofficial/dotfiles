@@ -1,0 +1,33 @@
+{
+    "created": "2025-09-20T17:07:08.000000Z",
+    "name": "allow-always-list-usr-lib-git-core-git-remote-https-origin-https-github-com-windwp-nvim-ts-autotag-git-github-com-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "github.com"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "/usr/lib/git-core/git-remote-https origin https://github.com/windwp/nvim-ts-autotag.git"
+            }
+        ]
+    }
+}

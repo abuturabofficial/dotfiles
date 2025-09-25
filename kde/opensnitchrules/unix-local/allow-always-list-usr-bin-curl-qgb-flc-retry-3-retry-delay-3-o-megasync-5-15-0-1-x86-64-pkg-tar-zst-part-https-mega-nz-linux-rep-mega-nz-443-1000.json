@@ -1,0 +1,33 @@
+{
+    "created": "2025-09-16T16:43:51.000000Z",
+    "name": "allow-always-list-usr-bin-curl-qgb-flc-retry-3-retry-delay-3-o-megasync-5-15-0-1-x86-64-pkg-tar-zst-part-https-mega-nz-linux-rep-mega-nz-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "mega.nz"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "/usr/bin/curl -qgb \"\" -fLC - --retry 3 --retry-delay 3 -o megasync-5.15.0-1-x86_64.pkg.tar.zst.part https://mega.nz/linux/repo/Arch_Extra/x86_64/megasync-5.15.0-1-x86_64.pkg.tar.zst"
+            }
+        ]
+    }
+}

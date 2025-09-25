@@ -1,0 +1,38 @@
+{
+    "created": "2025-09-20T11:01:55.000000Z",
+    "name": "allow-always-list-pacman-sync-color-always-y-u-iso-stats-cachyos-org-443-0",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "iso-stats.cachyos.org"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "0"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/bin/pacman"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "pacman --sync --color=always -y -u --"
+            }
+        ]
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "created": "2025-09-22T20:45:25.000000Z",
+    "name": "allow-always-list-usr-lib-systemd-systemd-timesyncd-162-159-200-123-123-975",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.ip",
+                "data": "162.159.200.123"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "123"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "975"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "/usr/lib/systemd/systemd-timesyncd"
+            }
+        ]
+    }
+}

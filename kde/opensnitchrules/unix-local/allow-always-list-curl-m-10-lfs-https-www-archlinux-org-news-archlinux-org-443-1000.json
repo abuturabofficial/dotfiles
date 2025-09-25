@@ -1,0 +1,38 @@
+{
+    "created": "2025-09-20T10:42:41.000000Z",
+    "name": "allow-always-list-curl-m-10-lfs-https-www-archlinux-org-news-archlinux-org-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/bin/curl"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "curl -m 10 -Lfs https://www.archlinux.org/news"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "archlinux.org"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            }
+        ]
+    }
+}

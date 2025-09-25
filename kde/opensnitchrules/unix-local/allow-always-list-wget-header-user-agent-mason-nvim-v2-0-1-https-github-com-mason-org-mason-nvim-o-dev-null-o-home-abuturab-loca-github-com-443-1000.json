@@ -1,0 +1,38 @@
+{
+    "created": "2025-09-20T17:22:12.000000Z",
+    "name": "allow-always-list-wget-header-user-agent-mason-nvim-v2-0-1-https-github-com-mason-org-mason-nvim-o-dev-null-o-home-abuturab-loca-github-com-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "github.com"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.path",
+                "data": "/usr/bin/wget"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "wget --header User-Agent: mason.nvim v2.0.1 (+https://github.com/mason-org/mason.nvim) -o /dev/null -O /home/abuturab/.local/share/nvim/mason/staging/shellcheck/shellcheck-v0.11.0.linux.x86_64.tar.gz -T 30 https://github.com/vscode-shellcheck/shellcheck-binaries/releases/download/v0.11.0/shellcheck-v0.11.0.linux.x86_64.tar.gz"
+            }
+        ]
+    }
+}

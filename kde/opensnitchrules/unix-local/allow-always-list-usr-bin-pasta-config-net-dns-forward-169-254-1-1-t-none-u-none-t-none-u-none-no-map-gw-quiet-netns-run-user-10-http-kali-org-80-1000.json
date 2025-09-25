@@ -1,0 +1,33 @@
+{
+    "created": "2025-09-16T09:37:15.000000Z",
+    "name": "allow-always-list-usr-bin-pasta-config-net-dns-forward-169-254-1-1-t-none-u-none-t-none-u-none-no-map-gw-quiet-netns-run-user-10-http-kali-org-80-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "http.kali.org"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "80"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "/usr/bin/pasta --config-net --dns-forward 169.254.1.1 -t none -u none -T none -U none --no-map-gw --quiet --netns /run/user/1000/netns/netns-4b48bb5e-0f56-9f3f-5761-086776c1e000 --map-guest-addr 169.254.1.2"
+            }
+        ]
+    }
+}

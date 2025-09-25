@@ -1,0 +1,33 @@
+{
+    "created": "2025-09-16T17:34:07.000000Z",
+    "name": "allow-always-list-usr-bin-curl-qgb-flc-retry-3-retry-delay-3-o-ente-auth-v4-4-4-x86-64-deb-part-https-github-com-ente-io-ente-re-github-com-443-1000",
+    "enabled": true,
+    "action": "allow",
+    "duration": "always",
+    "operator": {
+        "type": "list",
+        "operand": "list",
+        "list": [
+            {
+                "type": "simple",
+                "operand": "dest.host",
+                "data": "github.com"
+            },
+            {
+                "type": "simple",
+                "operand": "dest.port",
+                "data": "443"
+            },
+            {
+                "type": "simple",
+                "operand": "user.id",
+                "data": "1000"
+            },
+            {
+                "type": "simple",
+                "operand": "process.command",
+                "data": "/usr/bin/curl -qgb \"\" -fLC - --retry 3 --retry-delay 3 -o ente-auth-v4.4.4-x86_64.deb.part https://github.com/ente-io/ente/releases/download/auth-v4.4.4/ente-auth-v4.4.4-x86_64.deb"
+            }
+        ]
+    }
+}

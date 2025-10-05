@@ -2,7 +2,7 @@
 # Fully automated Kali Distrobox setup and enter script
 
 NAME="kali"
-HOME_DIR="$HOME/.containers/$NAME"
+HOME_DIR="$HOME/.distroboxes/$NAME"
 IMAGE="docker.io/kalilinux/kali-rolling:latest"
 PACKAGES="systemd libpam-systemd pipewire-audio-client-libraries zsh"
 # BOOTSTRAP="$HOME/.config/distrobox/init.d/kali-bootstrap.sh"

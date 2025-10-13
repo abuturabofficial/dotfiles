@@ -1,5 +1,5 @@
 #!/bin/bash
-SESSION=wiki
+SESSION=blog
 DIR=~/Documents/git/w3/w3-blog/
 
 # Check if the session already exists

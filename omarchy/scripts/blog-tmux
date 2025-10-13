@@ -1,0 +1,14 @@
+#!/bin/bash
+SESSION=wiki
+DIR=~/Documents/git/w3/w3-blog/
+
+# Check if the session already exists
+if tmux has-session -t "$SESSION" 2>/dev/null; then
+    tmux attach -t "$SESSION"
+else
+    tmux new-session -d -s "$SESSION" -c "$DIR"
+    tmux new-window -t "$SESSION":1 -c "$DIR"
+    tmux new-window -t "$SESSION":2 -c "$DIR"
+    tmux new-window -t "$SESSION":3 -n server -c "$DIR" "hugo server -D --disableLiveReload"
+    tmux attach -t "$SESSION"
+fi

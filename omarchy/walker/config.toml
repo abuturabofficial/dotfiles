@@ -7,8 +7,8 @@ force_keyboard_focus = true
 timeout = 60
 
 [keys]
-next = ["Up" ,"ctrl j"]
-prev = ["Down" ,"ctrl k"]
+next = ["Down" ,"ctrl j"]
+prev = ["Up" ,"ctrl k"]
 
 [keys.ai]
 run_last_response = ["ctrl e"]

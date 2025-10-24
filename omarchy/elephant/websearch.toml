@@ -1,0 +1,20 @@
+[[entries]]
+name = "Google"
+url = "https://www.google.com/search?q=%TERM%"
+
+[[entries]]
+default = true
+name = "Brave"
+url = "https://search.brave.com/search?q=%TERM%"
+
+[[entries]]
+name = "DuckDuckGo"
+url = "https://duckduckgo.com/?q=%TERM%"
+
+[[entries]]
+name = "Yandex"
+url = "https://yandex.com/search/?text=%TERM%"
+
+[[entries]]
+name = "Startpage"
+url = "https://www.startpage.com/do/search?q=%TERM%"

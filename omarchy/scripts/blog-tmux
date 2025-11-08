@@ -9,6 +9,6 @@ else
     tmux new-session -d -s "$SESSION" -c "$DIR"
     tmux new-window -t "$SESSION":1 -c "$DIR"
     tmux new-window -t "$SESSION":2 -c "$DIR"
-    tmux new-window -t "$SESSION":3 -n server -c "$DIR" "hugo server -D --disableLiveReload"
+    tmux new-window -t "$SESSION":3 -n server -c "$DIR" "hugo server --disableLiveReload -D"
     tmux attach -t "$SESSION"
 fi

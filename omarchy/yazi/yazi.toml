@@ -1,7 +1,9 @@
 [opener]
 play = [{ run = 'mpv "$@"', orphan = true, for = "unix" }]
 edit = [{ run = 'nvim "$@"', block = true, for = "unix" }]
-open = [{ run = 'xdg-open "$@"', desc = "Open" }]
+open = [{ run = 'xdg-open "$@"', desc = "Open" },
+        { run = 'gimp "$@"', desc = "Open with Gimp"},
+]
 
 [preview]
 wrap = "yes"

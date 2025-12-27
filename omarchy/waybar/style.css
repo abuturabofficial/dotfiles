@@ -48,12 +48,16 @@
   margin-right: 17px;
 }
 
+#language {
+  margin-right: 16px;
+}
+
 #network {
   margin-right: 13px;
 }
 
 #custom-expand-icon {
-  margin-right: 20px;
+  margin-right: 18px;
 }
 
 tooltip {

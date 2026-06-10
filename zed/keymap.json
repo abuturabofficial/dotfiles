@@ -1,0 +1,105 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+    },
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j k": "vim::NormalBefore",
+    },
+  },
+  {
+    "unbind": {
+      "ctrl-q": "zed::Quit",
+    },
+  },
+  // {
+  //   "context": "Default for Terminal Open",
+  //   "bindings": {
+  //     "ctrl-j": null,
+  //   },
+  // },
+  {
+    "context": "Editor && (showing_code_actions || showing_completions)",
+    "bindings": {
+      "down": "editor::ContextMenuNext",
+    },
+  },
+  {
+    "context": "Editor && (showing_code_actions || showing_completions)",
+    "bindings": {
+      "up": "editor::ContextMenuPrevious",
+    },
+  },
+  // {
+  //   "context": "Editor && (showing_code_actions || showing_completions)",
+  //   "bindings": {
+  //     "ctrl-k": "editor::ContextMenuPrevious"
+  //   }
+  // },
+  // {
+  //   "context": "Editor && (showing_code_actions || showing_completions)",
+  //   "bindings": {
+  //     "ctrl-j": "editor::ContextMenuNext"
+  //   }
+  // },
+  // {
+  //    "context": "Picker",
+  //    "bindings": {
+  //      "ctrl-j": "menu::SelectNext",
+  //      "ctrl-k": "menu::SelectPrevious"
+  //    }
+  //  }, 
+  
+  // Run task
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-shift-r": [
+        "task::Spawn",
+        {
+          "reveal_target": "center",
+        },
+      ],
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "space r t": [
+        "task::Spawn",
+        {
+          "reveal": "no_focus",
+        },
+      ],
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "space p w": [
+        "task::Spawn",
+        { "task_name": "WIKI: Paste Image from Clipboard" },
+      ],
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "space p b": [
+        "task::Spawn",
+        { "task_name": "Blog: Paste Image from Clipboard" },
+      ],
+    },
+  }
+]

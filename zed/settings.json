@@ -1,0 +1,9 @@
+{"diagnostics": {"inline":{"enabled":true}}, "project_panel": {"dock":"right"}, "outline_panel": {"dock":"right"}, "collaboration_panel": {"dock":"right"}, "edit_predictions": {"allow_data_collection":"no"}, "git_panel": {"dock": "right", "file_icons":true}, "tab_bar": {"show": true, "show_tab_bar_buttons": true, "show_nav_history_buttons":true}, "preview_tabs": {"enable_preview_file_from_code_navigation": false, "enable_preview_from_multibuffer": false, "enable_preview_from_project_panel": false, "enabled":true}, "tabs": {"git_status": true, "show_diagnostics": "errors", "file_icons":true}, "autosave": {"after_delay":{"milliseconds":2000}}, "agent": {"dock": "left", "default_model":{"provider":"mistral","model":"codestral-latest","enable_thinking":false},"favorite_models":[],"model_parameters":[]}, "cli_default_open_behavior": "existing_window", "icon_theme": {
+    "mode": "system",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  }, "telemetry": {"diagnostics":false,"metrics":false}, "vim_mode": true, "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark"
+  }}

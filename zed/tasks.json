@@ -1,0 +1,42 @@
+[
+	{
+		"label": "Blog: Paste Image from Clipboard",
+		"command": "/home/abuturab/.config/scripts/paste_image_blog.sh",
+		"use_new_terminal": false,
+		"allow_concurrent_runs": false,
+		"reveal": "never",
+		"reveal_target": "dock",
+		"hide": "on_success",
+		"shell": "system",
+		"show_summary": false,
+		"show_command": false,
+		"save": "current"
+	},
+	{
+		"label": "WIKI: Paste Image from Clipboard",
+		"command": "/home/abuturab/.config/scripts/paste_image_wiki.sh",
+		"use_new_terminal": false,
+		"allow_concurrent_runs": false,
+		"reveal": "never",
+		"reveal_target": "dock",
+		"hide": "on_success",
+		"shell": "system",
+		"show_summary": false,
+		"show_command": false,
+		"save": "current"
+	},
+	{
+		"label": "WIKI: (Deep DIR) Paste Image from Clipboard",
+		"command": "/home/abuturab/.config/scripts/paste_image_wiki_deep.sh",
+		"use_new_terminal": false,
+		"allow_concurrent_runs": false,
+		"reveal": "never",
+		"reveal_target": "dock",
+		"hide": "on_success",
+		"shell": "system",
+		"show_summary": false,
+		"show_command": false,
+		"save": "current"
+	},
+]
+// 

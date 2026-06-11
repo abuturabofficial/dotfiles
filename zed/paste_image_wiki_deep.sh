@@ -84,7 +84,7 @@ insert_markdown() {
 
   if [[ -n "$row" && "$row" =~ ^[0-9]+$ && "$row" -gt 0 ]]; then
     tmp="$(mktemp)"
-    awk -v row="$row" -v insert="$text" '{print} NR==row{print insert; inserted=1} END{if(!inserted){print insert}}' \
+    awk -v row="$row" -v insert="$text" 'NR==row{print insert} NR!=row{print}' \
       "$target_file" > "$tmp"
     mv "$tmp" "$target_file"
     return 0

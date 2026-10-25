@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<fontconfig>
+    <!-- Match languages that use the Nastaliq script -->
+    <match>
+        <or>
+            <test name="lang" compare="contains">
+                <string>ur</string> <!-- Urdu -->
+            </test>
+            <test name="lang" compare="contains">
+                <string>ar</string> <!-- Arabic -->
+            </test>
+            <test name="lang" compare="contains">
+                <string>fa</string> <!-- Persian (Farsi) -->
+            </test>
+            <test name="lang" compare="contains">
+                <string>ks</string> <!-- Kashmiri -->
+            </test>
+            <test name="lang" compare="contains">
+                <string>pa-Arab</string> <!-- Punjabi in Shahmukhi -->
+            </test>
+            <test name="lang" compare="contains">
+                <string>ps</string> <!-- Pashto -->
+            </test>
+            <test name="lang" compare="contains">
+                <string>sd</string> <!-- Sindhi -->
+            </test>
+        </or>
+        <edit name="family" mode="prepend">
+            <string>Noto Nastaliq Urdu</string>
+            <string>Jameel Noori Nastaleeq</string>
+        </edit>
+    </match>
+</fontconfig>

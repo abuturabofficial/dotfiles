@@ -52,3 +52,20 @@ hl.config({ decoration = { shadow = { enabled = false } } })
 --     column_width = 0.97,
 --   },
 -- })
+--
+-- Popup Bitwarden Extension Windows on Chromium Browsers
+hl.window_rule({
+	name = "bitwarden-popout-chromium",
+	match = { class = "^(brave|chromium|chrome)-nngceckbapebfimnlniiiahkandclblb-.*$" },
+	float = true,
+	size = "400 600",
+	center = true,
+})
+-- Firefox: Bitwarden Extension Float
+hl.on("window.title", function(w)
+	if w ~= nil and w.class == "firefox" and w.title:match("^Extension: %(Bitwarden") then
+		hl.dispatch(hl.dsp.window.float({ action = "enable", window = w }))
+		hl.dispatch(hl.dsp.window.resize({ x = 400, y = 600, relative = false, window = w }))
+		hl.dispatch(hl.dsp.window.center({ window = w }))
+	end
+end)

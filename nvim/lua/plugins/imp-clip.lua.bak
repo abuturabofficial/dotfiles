@@ -1,0 +1,66 @@
+-- ~/.config/nvim/lua/plugins/img-clip.lua
+
+local wiki_root = vim.fn.expand("~/Documents/git/w3/w3-wiki/static/notes") -- no trailing slash
+
+-- ImageMagick 7 uses "magick", older versions use "convert"
+local im = vim.fn.executable("magick") == 1 and "magick" or "convert"
+
+local function buf_path()
+  return vim.api.nvim_buf_get_name(0)
+end
+
+-- first free "<base>-<n>" name inside dir
+local function next_name(dir, base)
+  local n = 1
+  while vim.uv.fs_stat(string.format("%s/%s-%d.webp", dir, base, n)) do
+    n = n + 1
+  end
+  return base .. "-" .. n
+end
+
+------------------------ WIKI ------------------------------
+-- content/<course>/<name>.md -> static/notes/<course>/<name>-N.webp
+-- link: ![](/notes/<course>/<name>-N.webp)
+local function paste_wiki_image()
+  local file = buf_path()
+  local base = vim.fn.fnamemodify(file, ":t:r")
+  local course = vim.fn.fnamemodify(file, ":p:h:t")
+  local dir = wiki_root .. "/" .. course
+
+  require("img-clip").paste_image({
+    dir_path = dir,
+    file_name = next_name(dir, base),
+    template = "![](/notes/" .. course .. "/$FILE_NAME)",
+  })
+end
+
+------------------------ BLOG ------------------------------
+-- blog-name/index.md -> blog-name/blog-name-N.webp
+-- link: ![](blog-name-N.webp)
+local function paste_blog_image()
+  local dir = vim.fn.fnamemodify(buf_path(), ":p:h")
+  local base = vim.fn.fnamemodify(dir, ":t")
+
+  require("img-clip").paste_image({
+    dir_path = dir,
+    file_name = next_name(dir, base),
+    template = "![]($FILE_NAME)",
+  })
+end
+
+return {
+  "HakonHarnes/img-clip.nvim",
+  event = "VeryLazy",
+  opts = {
+    default = {
+      relative_to_current_file = false,
+      prompt_for_file_name = false,
+      extension = "webp",
+      process_cmd = im .. " - -quality 80 webp:-",
+    },
+  },
+  keys = {
+    { "<leader>pw", paste_wiki_image, desc = "Wiki: paste image from clipboard" },
+    { "<leader>pb", paste_blog_image, desc = "Blog: paste image from clipboard" },
+  },
+}

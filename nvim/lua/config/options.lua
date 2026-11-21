@@ -5,3 +5,4 @@ require("config.remote_clipboard").setup()
 vim.opt.relativenumber = true
 vim.opt.wrap = true -- Enable line wrap
 vim.opt.formatoptions:remove({ "o" }) -- Empty line after comment
+vim.opt.spell = false -- Turn off built-in spell checker
